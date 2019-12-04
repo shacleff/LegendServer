@@ -6,9 +6,11 @@
 
 启动方法：
 1、执行npm-install.bat或npm-install.sh
+
 2、编译游戏服
 cd game-server
 npm run build
+
 2、启动游戏服
 cd dist
 node app

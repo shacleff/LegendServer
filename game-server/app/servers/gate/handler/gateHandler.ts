@@ -18,7 +18,8 @@ export class GateHandler {
      *
      */
     async queryEntry(msg: {uid: string}, session: BackendSession) {
-        let uid = msg.uid;
+        let uid = msg.uid; // uid的名字
+
         if (!uid) {
             return {
                 code: 500
