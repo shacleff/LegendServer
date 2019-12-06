@@ -1,7 +1,7 @@
-import { Actor } from "./Actor";
+import {Actor} from "./Actor";
 
 export interface PActor {
-    prev:PActor;
-    next:PActor;
-    player:Actor;
+    prev: PActor;
+    next: PActor;
+    player: Actor;
 }

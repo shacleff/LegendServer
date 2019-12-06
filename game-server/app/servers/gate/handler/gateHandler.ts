@@ -1,5 +1,5 @@
-import { dispatch } from '../../../util/dispatcher';
-import { Application , BackendSession} from 'pinus';
+import {dispatch} from '../../../util/dispatcher';
+import {Application, BackendSession} from 'pinus';
 
 export default function (app: Application) {
     return new GateHandler(app);
@@ -9,15 +9,8 @@ export class GateHandler {
     constructor(private app: Application) {
     }
 
-    /**
-     * Gate handler that dispatch user to connectors.
-     *
-     * @param {Object} msg message from client
-     * @param {Object} session
-     * @param {Function} next next stemp callback
-     *
-     */
-    async queryEntry(msg: {uid: string}, session: BackendSession) {
+    // 负责负载均衡,分配一个connector服务器
+    async queryEntry(msg: { uid: string }, session: BackendSession) {
         let uid = msg.uid; // uid的名字
 
         if (!uid) {
@@ -25,6 +18,7 @@ export class GateHandler {
                 code: 500
             };
         }
+
         // get all connectors
         let connectors = this.app.getServersByType('connector');
         if (!connectors || connectors.length === 0) {
@@ -32,6 +26,7 @@ export class GateHandler {
                 code: 500
             };
         }
+
         // select connector
         let res = dispatch(uid, connectors);
         return {

@@ -1,30 +1,19 @@
-
 export default class a_star_pathfind {
-    /**
-     * 所有的格子节点
-     */
+    // 所有的格子节点
     private tiles: tile[][] = []
     private max_x: number = 0;
     private max_y: number = 0;
 
-    /**
-     * 搜索序号
-     */
+    // 搜索序号
     private findIndex: number = 0;
 
-    /**
-     * 关闭列表中最大的格子数
-     */
+    // 关闭列表中最大的格子数
     private maxSearch: number = Infinity;
 
-    /**
-     * 是否可走对角线
-     */
+    // 是否可走对角线
     private allowDiagonal: boolean = true;
 
-    /**
-     * 启发函数
-     */
+    // 启发函数
     private heuristicFunc: (x0: number, y0: number, x1: number, y1: number) => number = function (x0, y0, x1, y1) {
         return Math.abs(x0 - x1) + Math.abs(y0 - y1);
         //////////////xiaowa
@@ -67,8 +56,8 @@ export default class a_star_pathfind {
 
     /**
      * 改变格子代价值
-     * @param x 
-     * @param y 
+     * @param x
+     * @param y
      * @param val 值越大，代价越大。 0表示不可行走
      */
     changeTileValue(x: number, y: number, val: number) {
@@ -170,31 +159,27 @@ export default class a_star_pathfind {
         let path = [];
         let tmpTile = closestTile;
         while (tmpTile !== startTile) {
-            path.push({ "x": tmpTile.x, "y": tmpTile.y });
+            path.push({"x": tmpTile.x, "y": tmpTile.y});
             tmpTile = tmpTile.pre;
         }
         path.reverse();
         return path;
     }
 
-
-    /**
-     * 寻找邻居节点
-     * @param tile 
-     */
+    // 寻找邻居节点
     private getNeighbors(tile: tile): tile[] {
-        let neighbors: tile[] = [],
-            x = tile.x,
-            y = tile.y,
-            tiles = this.tiles,
+        let neighbors: tile[] = [];
+        let x = tile.x;
+        let y = tile.y;
+        let tiles = this.tiles;
 
-            l = false,
-            r = false,
-            u = false,
-            d = false,
+        let l = false;
+        let r = false;
+        let u = false;
+        let d = false;
 
-            max_x = this.max_x,
-            max_y = this.max_y;
+        let max_x = this.max_x;
+        let max_y = this.max_y;
 
         // 右
         if (x + 1 <= max_x && tiles[y][x + 1].val !== 0) {
@@ -247,9 +232,7 @@ export default class a_star_pathfind {
         return neighbors;
     }
 
-    /**
-     * 重置所有格子的搜索序号
-     */
+    // 重置所有格子的搜索序号
     private resetFindIndex() {
         for (let i = this.tiles.length - 1; i >= 0; i--) {
             let row = this.tiles[i];
@@ -259,24 +242,18 @@ export default class a_star_pathfind {
         }
         this.findIndex = 0;
     }
-
 }
 
 class queue {
-
     private arr: tile[] = []
 
-    /**
-     * 入栈
-     */
+    // 入栈
     enqueue(tile: tile) {
         this.arr.push(tile);
         this.move_up(this.arr.length - 1);
     }
 
-    /**
-     * 出栈
-     */
+    // 出栈
     dequeue(): tile {
         if (this.arr.length === 0) {
             return undefined as any;
@@ -288,9 +265,7 @@ class queue {
         return min;
     }
 
-    /**
-     * 移除
-     */
+    // 移除
     remove(tile: tile) {
         let index = this.arr.indexOf(tile);
         if (index === -1) {
@@ -301,9 +276,7 @@ class queue {
         this.move_down(index);
     }
 
-    /**
-     * 赋值更小值时，重新计算
-     */
+    // 赋值更小值时，重新计算
     rescore(tile: tile) {
         let index = this.arr.indexOf(tile);
         if (index === -1) {
@@ -350,9 +323,7 @@ class queue {
         }
     }
 
-    /**
-     * 长度
-     */
+    // 长度
     getLen() {
         return this.arr.length;
     }
@@ -376,23 +347,15 @@ const enum tileState {
     closed      // 关闭列表中
 }
 
-/**
- * 寻路参数配置
- */
+// 寻路参数配置
 interface pathFindOptions {
 
-    /**
-     * 关闭列表中最多搜索格子数 （默认无限制）
-     */
+    // 关闭列表中最多搜索格子数 （默认无限制
     maxSearch?: number,
 
-    /**
-     * 是否可以走对角线  （默认可以）
-     */
+    // 是否可以走对角线  （默认可以）
     allowDiagonal?: boolean,
 
-    /**
-     * 启发函数  (默认曼哈顿)
-     */
+    // 启发函数  (默认曼哈顿)
     heuristicFunc?: (x0: number, y0: number, x1: number, y1: number) => number,
 }

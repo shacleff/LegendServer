@@ -1,5 +1,5 @@
 import {Application, ChannelService, RemoterClass, FrontendSession} from 'pinus';
-import { MainScene } from '../drive/MainScene';
+import {MainScene} from '../drive/MainScene';
 
 
 export default function (app: Application) {
@@ -21,7 +21,7 @@ export class SceneRemote {
         this.app = app;
         this.channelService = app.get('channelService');
         let channel = this.channelService.getChannel('MainScene', true);
-        MainScene.getInstance().set_channel(this.channelService,channel);
+        MainScene.getInstance().set_channel(this.channelService, channel);
     }
 
     private channelService: ChannelService;

@@ -1,5 +1,5 @@
-import { pinus } from 'pinus';
-import { preload } from './preload';
+import {pinus} from 'pinus';
+import {preload} from './preload';
 
 /**
  *  替换全局Promise
@@ -8,9 +8,6 @@ import { preload } from './preload';
  */
 preload();
 
-/**
- * Init app for client.
- */
 let app = pinus.createApp();
 app.set('name', 'Legend');
 
@@ -35,4 +32,3 @@ app.configure('production|development', 'gate', function () {
 
 // start app
 app.start();
-
