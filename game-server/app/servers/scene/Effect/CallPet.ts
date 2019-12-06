@@ -1,21 +1,17 @@
-import { Effect } from "../base/Effect";
-import { Target } from "../base/Target";
-import { PetConfig, Pet } from "../base/Pet";
-import { Player } from "../base/Player";
-import { MainScene } from "../drive/MainScene";
-import { MonsterAI } from "./MonsterAI";
+import {Effect} from "../base/Effect";
+import {Target} from "../base/Target";
+import {PetConfig, Pet} from "../base/Pet";
+import {Player} from "../base/Player";
+import {MainScene} from "../drive/MainScene";
+import {MonsterAI} from "./MonsterAI";
 
-/*
-    召唤宠物
-*/
-
+// 召唤宠物
 export class CallPet implements Effect {
-    
-    private _target:Player = null;
-    private _config:PetConfig = null;
-    private _is_run:boolean = false;
+    private _target: Player = null;
+    private _config: PetConfig = null;
+    private _is_run: boolean = false;
 
-    constructor(config:PetConfig,active:Player) {
+    constructor(config: PetConfig, active: Player) {
         this._target = active;
         this._config = config;
     }
@@ -23,28 +19,34 @@ export class CallPet implements Effect {
     getName(): string {
         return "CallPet";
     }
-    getActive():Target {
+
+    getActive(): Target {
         return this._target;
     }
-    getTarget():Target {
+
+    getTarget(): Target {
         return this._target;
     }
+
     run(): void {
-        let pet:Pet = new Pet(this._config,this._target);
-        let main_scene:MainScene = this._target.get_scene();
-        if(!this._target.add_pet(pet)) return;
+        let pet: Pet = new Pet(this._config, this._target);
+        let main_scene: MainScene = this._target.get_scene();
+        if (!this._target.add_pet(pet)) {
+            return;
+        }
         main_scene.add_actor(pet);
-        let effect:Effect = new MonsterAI(pet);
+        let effect: Effect = new MonsterAI(pet);
         pet.pushEffect(effect);
         this._target.killEffectByName('Move');
-        this._target.notice_all_player('onCallPet',{active:this._target.name});
-        this._target.notice_all_player("onCreate",pet.get_info());
+        this._target.notice_all_player('onCallPet', {active: this._target.name});
+        this._target.notice_all_player("onCreate", pet.get_info());
     }
+
     is_run(): Boolean {
         return this._is_run;
     }
+
     kill(): void {
         return;
     }
-
 }

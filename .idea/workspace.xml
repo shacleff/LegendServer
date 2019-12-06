@@ -2,31 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3c58dbf-d5f5-4343-a5c6-15ac86226f03" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game-server/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/game-server/app.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game-server/app/servers/connector/handler/entryHandler.ts" beforeDir="false" afterPath="$PROJECT_DIR$/game-server/app/servers/connector/handler/entryHandler.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game-server/app/servers/connector/remote/authRemoter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/game-server/app/servers/connector/remote/authRemoter.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game-server/app/servers/gate/handler/gateHandler.ts" beforeDir="false" afterPath="$PROJECT_DIR$/game-server/app/servers/gate/handler/gateHandler.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game-server/app/servers/scene/base/Actor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/game-server/app/servers/scene/base/Actor.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game-server/app/servers/scene/base/Effect.ts" beforeDir="false" afterPath="$PROJECT_DIR$/game-server/app/servers/scene/base/Effect.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game-server/app/servers/scene/base/Monster.ts" beforeDir="false" afterPath="$PROJECT_DIR$/game-server/app/servers/scene/base/Monster.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game-server/app/servers/scene/base/PActor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/game-server/app/servers/scene/base/PActor.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game-server/app/servers/scene/base/PRes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/game-server/app/servers/scene/base/PRes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game-server/app/servers/scene/base/Pet.ts" beforeDir="false" afterPath="$PROJECT_DIR$/game-server/app/servers/scene/base/Pet.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game-server/app/servers/scene/base/Player.ts" beforeDir="false" afterPath="$PROJECT_DIR$/game-server/app/servers/scene/base/Player.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game-server/app/servers/scene/base/Point.ts" beforeDir="false" afterPath="$PROJECT_DIR$/game-server/app/servers/scene/base/Point.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game-server/app/servers/scene/base/Target.ts" beforeDir="false" afterPath="$PROJECT_DIR$/game-server/app/servers/scene/base/Target.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game-server/app/servers/scene/drive/MainScene.ts" beforeDir="false" afterPath="$PROJECT_DIR$/game-server/app/servers/scene/drive/MainScene.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game-server/app/servers/scene/handler/sceneHandler.ts" beforeDir="false" afterPath="$PROJECT_DIR$/game-server/app/servers/scene/handler/sceneHandler.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game-server/app/servers/scene/lifecycle.ts" beforeDir="false" afterPath="$PROJECT_DIR$/game-server/app/servers/scene/lifecycle.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game-server/app/servers/scene/remote/sceneRemote.ts" beforeDir="false" afterPath="$PROJECT_DIR$/game-server/app/servers/scene/remote/sceneRemote.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game-server/app/util/dispatcher.ts" beforeDir="false" afterPath="$PROJECT_DIR$/game-server/app/util/dispatcher.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game-server/app/util/mapData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/game-server/app/util/mapData.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game-server/app/util/pathFinding.ts" beforeDir="false" afterPath="$PROJECT_DIR$/game-server/app/util/pathFinding.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game-server/app/util/resConfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/game-server/app/util/resConfig.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game-server/app/util/tool.ts" beforeDir="false" afterPath="$PROJECT_DIR$/game-server/app/util/tool.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game-server/app/servers/scene/Effect/Attack.ts" beforeDir="false" afterPath="$PROJECT_DIR$/game-server/app/servers/scene/Effect/Attack.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game-server/app/servers/scene/Effect/CallPet.ts" beforeDir="false" afterPath="$PROJECT_DIR$/game-server/app/servers/scene/Effect/CallPet.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game-server/app/servers/scene/Effect/Cure.ts" beforeDir="false" afterPath="$PROJECT_DIR$/game-server/app/servers/scene/Effect/Cure.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game-server/app/servers/scene/Effect/FierceWind.ts" beforeDir="false" afterPath="$PROJECT_DIR$/game-server/app/servers/scene/Effect/FierceWind.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game-server/app/servers/scene/Effect/Hailstorm.ts" beforeDir="false" afterPath="$PROJECT_DIR$/game-server/app/servers/scene/Effect/Hailstorm.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game-server/app/servers/scene/Effect/Hemophagy.ts" beforeDir="false" afterPath="$PROJECT_DIR$/game-server/app/servers/scene/Effect/Hemophagy.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game-server/app/servers/scene/Effect/MeteorSwarm.ts" beforeDir="false" afterPath="$PROJECT_DIR$/game-server/app/servers/scene/Effect/MeteorSwarm.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game-server/app/servers/scene/Effect/MonsterAI.ts" beforeDir="false" afterPath="$PROJECT_DIR$/game-server/app/servers/scene/Effect/MonsterAI.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game-server/app/servers/scene/Effect/MonsterActiveAI.ts" beforeDir="false" afterPath="$PROJECT_DIR$/game-server/app/servers/scene/Effect/MonsterActiveAI.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game-server/app/servers/scene/Effect/Move.ts" beforeDir="false" afterPath="$PROJECT_DIR$/game-server/app/servers/scene/Effect/Move.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game-server/app/servers/scene/Effect/PursueSun.ts" beforeDir="false" afterPath="$PROJECT_DIR$/game-server/app/servers/scene/Effect/PursueSun.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game-server/app/servers/scene/Effect/RagingFire.ts" beforeDir="false" afterPath="$PROJECT_DIR$/game-server/app/servers/scene/Effect/RagingFire.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game-server/app/servers/scene/Effect/SkyFire.ts" beforeDir="false" afterPath="$PROJECT_DIR$/game-server/app/servers/scene/Effect/SkyFire.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -39,32 +27,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/game-server/app/servers/scene/handler/sceneHandler.ts">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game-server/app/servers/scene/Effect/PursueSun.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
-              <caret line="132" selection-start-line="132" selection-end-line="132" />
+            <state relative-caret-position="379">
+              <caret line="123" column="5" selection-start-line="123" selection-start-column="5" selection-end-line="123" selection-end-column="5" />
               <folding>
-                <element signature="e#0#52#0" expanded="true" />
+                <element signature="e#0#54#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/game-server/app/servers/scene/remote/sceneRemote.ts">
+        <entry file="file://$PROJECT_DIR$/game-server/app/servers/scene/Effect/RagingFire.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+            <state relative-caret-position="361">
+              <caret line="66" column="7" selection-start-line="66" selection-start-column="7" selection-end-line="66" selection-end-column="7" />
+              <folding>
+                <element signature="e#0#54#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/game-server/app/servers/scene/drive/MainScene.ts">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/game-server/app/servers/scene/Effect/SkyFire.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="247" column="22" selection-start-line="247" selection-start-column="11" selection-end-line="247" selection-end-column="22" />
+            <state relative-caret-position="397">
+              <caret line="60" column="5" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
+              <folding>
+                <element signature="e#0#54#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -112,10 +106,23 @@
         <option value="$PROJECT_DIR$/game-server/app/servers/scene/drive/MainScene.ts" />
         <option value="$PROJECT_DIR$/game-server/app/servers/scene/remote/sceneRemote.ts" />
         <option value="$PROJECT_DIR$/game-server/app/servers/scene/handler/sceneHandler.ts" />
+        <option value="$PROJECT_DIR$/game-server/app/servers/scene/Effect/Attack.ts" />
+        <option value="$PROJECT_DIR$/game-server/app/servers/scene/Effect/CallPet.ts" />
+        <option value="$PROJECT_DIR$/game-server/app/servers/scene/Effect/Cure.ts" />
+        <option value="$PROJECT_DIR$/game-server/app/servers/scene/Effect/FierceWind.ts" />
+        <option value="$PROJECT_DIR$/game-server/app/servers/scene/Effect/Hailstorm.ts" />
+        <option value="$PROJECT_DIR$/game-server/app/servers/scene/Effect/Hemophagy.ts" />
+        <option value="$PROJECT_DIR$/game-server/app/servers/scene/Effect/MeteorSwarm.ts" />
+        <option value="$PROJECT_DIR$/game-server/app/servers/scene/Effect/MonsterActiveAI.ts" />
+        <option value="$PROJECT_DIR$/game-server/app/servers/scene/Effect/MonsterAI.ts" />
+        <option value="$PROJECT_DIR$/game-server/app/servers/scene/Effect/Move.ts" />
+        <option value="$PROJECT_DIR$/game-server/app/servers/scene/Effect/PursueSun.ts" />
+        <option value="$PROJECT_DIR$/game-server/app/servers/scene/Effect/RagingFire.ts" />
+        <option value="$PROJECT_DIR$/game-server/app/servers/scene/Effect/SkyFire.ts" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1413" />
     <option name="height" value="877" />
@@ -250,18 +257,18 @@
       <updated>1575455746995</updated>
       <workItem from="1575455748474" duration="1686000" />
       <workItem from="1575541709119" duration="1884000" />
-      <workItem from="1575600496312" duration="2483000" />
+      <workItem from="1575600496312" duration="3789000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6053000" />
+    <option name="totallyTimeSpent" value="7359000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1413" height="877" extended-state="0" />
+    <frame x="0" y="23" width="1435" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13626532" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24414478" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -275,7 +282,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="TypeScript" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.09660574" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.22062664" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -466,15 +473,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/game-server/app/servers/scene/Effect/Attack.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-107">
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/game-server/app/servers/scene/drive/MainScene.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
@@ -498,10 +496,140 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/game-server/app/servers/scene/handler/sceneHandler.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="132" selection-start-line="132" selection-end-line="132" />
+        <state relative-caret-position="244">
+          <caret line="106" column="53" selection-start-line="106" selection-start-column="39" selection-end-line="106" selection-end-column="53" />
           <folding>
             <element signature="e#0#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/app/servers/scene/Effect/Attack.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1188">
+          <caret line="66" column="5" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/app/servers/scene/Effect/CallPet.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/app/servers/scene/Effect/Cure.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="73" column="5" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/app/servers/scene/Effect/FierceWind.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="63" column="5" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/app/servers/scene/Effect/Hailstorm.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="70" column="5" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/app/servers/scene/Effect/Hemophagy.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/app/servers/scene/Effect/MeteorSwarm.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/app/servers/scene/Effect/MonsterActiveAI.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/app/servers/scene/Effect/MonsterAI.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="90" column="5" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/app/servers/scene/Effect/Move.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="99" column="1" selection-start-line="99" selection-start-column="1" selection-end-line="99" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/app/servers/scene/Effect/PursueSun.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="123" column="5" selection-start-line="123" selection-start-column="5" selection-end-line="123" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/app/servers/scene/Effect/RagingFire.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="66" column="7" selection-start-line="66" selection-start-column="7" selection-end-line="66" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/app/servers/scene/Effect/SkyFire.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="60" column="5" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
           </folding>
         </state>
       </provider>
